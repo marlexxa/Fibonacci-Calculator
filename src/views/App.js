@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import Calculator from 'components/organisms/Calculator/Calculator';
+import { GlobalStyle } from 'assets/styles/GlobalStyle';
 
 const Wrapper = styled.div`
   background-color: #f7f8f9;
@@ -13,9 +13,12 @@ const Wrapper = styled.div`
 `;
 
 const App = () => (
-  <Wrapper>
-    <Calculator />
-  </Wrapper>
+  <>
+    <GlobalStyle />
+    <Wrapper>
+      <Calculator />
+    </Wrapper>
+  </>
 );
 
 export default App;
