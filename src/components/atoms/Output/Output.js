@@ -6,5 +6,5 @@ export const Output = styled.div`
   height: 20px;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.white};
 `;

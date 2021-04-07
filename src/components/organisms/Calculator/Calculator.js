@@ -7,7 +7,7 @@ import { Button } from 'components/atoms/Button/Button';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.white};
   padding: 5em 10em;
   border-radius: 25px;
   box-shadow: 5px 5px 10px grey;
