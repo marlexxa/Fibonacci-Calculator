@@ -4,14 +4,14 @@ import { Label } from 'components/atoms/Label/Label';
 import { Input } from 'components/atoms/Input/Input';
 import { Wrapper } from './InputField.styles';
 
-const InputField = ({ onChange, value, label, name, id, type = 'number', min = '0' }) => {
+const InputField = React.forwardRef(({ onChange, value, label, name, id, type = 'number', min = '0' }, ref) => {
   return (
     <Wrapper>
       <Label htmlFor={id}>{label}</Label>
-      <Input name={name} id={id} type={type} min={min} value={value} onChange={onChange} data-testid="input" />
+      <Input ref={ref} name={name} id={id} type={type} min={min} value={value} onChange={onChange} data-testid="input" />
     </Wrapper>
   );
-};
+});
 
 InputField.propTypes = {
   label: PropTypes.string.isRequired,

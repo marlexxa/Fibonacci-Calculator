@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import InputField from 'components/molecules/InputField/InputField';
 import OutputField from 'components/molecules/OutputField/OutputField';
 import { Button } from 'components/atoms/Button/Button';
@@ -19,10 +19,16 @@ const Calculator = () => {
     setOutputValue(calculateFibonacci(inputValue));
   };
 
+  useEffect(() => {
+    if (ref.current) ref.current.focus();
+  }, []);
+
+  const ref = useRef(null);
+
   return (
     <Wrapper onSubmit={handleOutputCalulation}>
       <Title>Fibonacci Calculator</Title>
-      <InputField label="Input:" id="number" name="number" value={inputValue} onChange={handleInputChange} />
+      <InputField ref={ref} label="Input:" id="number" name="number" value={inputValue} onChange={handleInputChange} />
       <OutputField name="Result:" value={outputValue} />
       <Button type="submit" disabled={!inputValue}>
         Calculate
