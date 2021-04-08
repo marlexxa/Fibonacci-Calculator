@@ -1,21 +1,10 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import InputField from 'components/molecules/InputField/InputField';
 import OutputField from 'components/molecules/OutputField/OutputField';
 import { Button } from 'components/atoms/Button/Button';
 import { Title } from 'components/atoms/Title/Title';
 import { calculateFibonacci } from 'utils/calculateFibonacci';
-
-const Wrapper = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: ${({ theme }) => theme.colors.white};
-  min-width: 500px;
-  padding: 2em;
-  border-radius: 25px;
-  box-shadow: 5px 5px 10px ${({ theme }) => theme.colors.grey};
-`;
+import { Wrapper } from './Calculator.styles';
 
 const Calculator = () => {
   const [inputValue, setInputValue] = useState('');
