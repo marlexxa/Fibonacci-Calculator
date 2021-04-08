@@ -24,7 +24,9 @@ const Calculator = () => {
       <Title>Fibonacci Calculator</Title>
       <InputField label="Input:" id="number" name="number" value={inputValue} onChange={handleInputChange} />
       <OutputField name="Result:" value={outputValue} />
-      <Button type="submit">Calculate</Button>
+      <Button type="submit" disabled={!inputValue}>
+        Calculate
+      </Button>
     </Wrapper>
   );
 };

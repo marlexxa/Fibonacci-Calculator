@@ -15,11 +15,15 @@ export const Button = styled.button`
   box-shadow: 3px 3px 5px ${({ theme }) => theme.colors.grey};
   transition: 0.2s ease-in-out;
 
-  &:hover {
+  &:hover:not([disabled]) {
     box-shadow: 3px 3px 5px ${({ theme }) => theme.colors.black};
   }
 
   &:focus {
     outline: none;
+  }
+
+  &:disabled {
+    background-color: ${({ theme }) => theme.colors.grey};
   }
 `;
