@@ -2,5 +2,5 @@ import styled from 'styled-components';
 
 export const Label = styled.label`
   font-weight: bold;
-  font-size: 12px;
+  font-size: ${({ theme }) => theme.fontSize.small};
 `;

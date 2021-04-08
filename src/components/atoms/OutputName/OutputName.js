@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
 export const OutputName = styled.p`
-  font-size: 12px;
+  font-size: ${({ theme }) => theme.fontSize.small};
   font-weight: bold;
 `;
