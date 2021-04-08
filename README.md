@@ -13,5 +13,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Run `npm start` in your bash/command line
 4. The application is avaible at [http://localhost:3000](http://localhost:3000)
 
-##### Running the tests:
+###### Running the tests:
 After installing all dependencies run `npm test`.
