@@ -8,4 +8,9 @@ export const GlobalStyle = createGlobalStyle`
   *, *::after, *::before {
     box-sizing: inherit;
   }
+
+  body {
+    margin: 0;
+    padding:0;
+  }
 `;
