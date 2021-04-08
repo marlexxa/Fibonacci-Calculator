@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const Output = styled.div`
   padding: 5px 10px;
-  width: 100px;
-  height: 20px;
-  border: 1px solid black;
+  min-width: 100px;
+  height: 40px;
+  border: 1px solid ${({ theme }) => theme.colors.black};
   border-radius: 5px;
   background-color: ${({ theme }) => theme.colors.white};
+  box-shadow: 2px 4px 5px ${({ theme }) => theme.colors.grey};
 `;
