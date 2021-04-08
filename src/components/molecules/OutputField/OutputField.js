@@ -15,11 +15,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const OutputField = ({ name }) => {
+const OutputField = ({ name, value }) => {
   return (
     <Wrapper>
       <OutputName>{name}</OutputName>
-      <Output />
+      <Output>{value}</Output>
     </Wrapper>
   );
 };

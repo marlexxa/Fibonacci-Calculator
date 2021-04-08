@@ -16,11 +16,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const InputField = ({ label, name, id, type = 'number', min = '0' }) => {
+const InputField = ({ onChange, value, label, name, id, type = 'number', min = '0' }) => {
   return (
     <Wrapper>
       <Label htmlFor={id}>{label}</Label>
-      <Input name={name} id={id} type={type} min={min} />
+      <Input name={name} id={id} type={type} min={min} value={value} onChange={onChange} />
     </Wrapper>
   );
 };
