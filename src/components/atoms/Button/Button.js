@@ -25,5 +25,6 @@ export const Button = styled.button`
 
   &:disabled {
     background-color: ${({ theme }) => theme.colors.grey};
+    box-shadow: none;
   }
 `;
