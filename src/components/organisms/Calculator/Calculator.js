@@ -4,6 +4,7 @@ import InputField from 'components/molecules/InputField/InputField';
 import OutputField from 'components/molecules/OutputField/OutputField';
 import { Button } from 'components/atoms/Button/Button';
 import { Title } from 'components/atoms/Title/Title';
+import { calculateFibonacci } from 'utils/calculateFibonacci';
 
 const Wrapper = styled.form`
   display: flex;
@@ -27,11 +28,6 @@ const Calculator = () => {
   const handleOutputCalulation = (e) => {
     e.preventDefault();
     setOutputValue(calculateFibonacci(inputValue));
-  };
-
-  const calculateFibonacci = (input) => {
-    if (input < 2) return input;
-    return calculateFibonacci(input - 1) + calculateFibonacci(input - 2);
   };
 
   return (
