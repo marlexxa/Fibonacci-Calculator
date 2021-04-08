@@ -30,6 +30,8 @@ InputField.propTypes = {
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   type: PropTypes.string,
+  min: PropTypes.string,
+  value: PropTypes.string,
 };
 
 export default InputField;

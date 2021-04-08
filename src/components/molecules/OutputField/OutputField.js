@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { Output } from 'components/atoms/Output/Output';
 import { OutputName } from 'components/atoms/OutputName/OutputName';
 
@@ -22,6 +23,11 @@ const OutputField = ({ name, value }) => {
       <Output>{value}</Output>
     </Wrapper>
   );
+};
+
+OutputField.propTypes = {
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string,
 };
 
 export default OutputField;
