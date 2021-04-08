@@ -6,15 +6,12 @@ The application is created using React.js and styled-components libraries. Atomi
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Running the project locally
+###### Running the project:
 
-In the project directory, you can run:
+1. Clone this project locally
+2. Run `npm install` in your bash/command line
+3. Run `npm start` in your bash/command line
+4. The application is avaible at [http://localhost:3000](http://localhost:3000)
 
-##### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-##### `npm test`
-
-Launches the test runner in the interactive watch mode.\
+##### Running the tests:
+After installing all dependencies run `npm test`.
