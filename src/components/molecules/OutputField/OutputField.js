@@ -27,7 +27,7 @@ const OutputField = ({ name, value }) => {
 
 OutputField.propTypes = {
   name: PropTypes.string.isRequired,
-  value: PropTypes.string,
+  value: PropTypes.number,
 };
 
 export default OutputField;

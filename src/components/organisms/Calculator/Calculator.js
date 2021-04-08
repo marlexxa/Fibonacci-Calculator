@@ -18,7 +18,7 @@ const Wrapper = styled.form`
 
 const Calculator = () => {
   const [inputValue, setInputValue] = useState('');
-  const [outputValue, setOutputValue] = useState('');
+  const [outputValue, setOutputValue] = useState();
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -37,8 +37,8 @@ const Calculator = () => {
   return (
     <Wrapper onSubmit={handleOutputCalulation}>
       <Title>Fibonacci Calculator</Title>
-      <InputField label="Input: " id="number" name="number" value={inputValue} onChange={handleInputChange} />
-      <OutputField name="Result: " value={outputValue} />
+      <InputField label="Input:" id="number" name="number" value={inputValue} onChange={handleInputChange} />
+      <OutputField name="Result:" value={outputValue} />
       <Button type="submit">Calculate</Button>
     </Wrapper>
   );
