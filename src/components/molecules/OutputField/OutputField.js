@@ -8,7 +8,7 @@ const OutputField = ({ name, value }) => {
   return (
     <Wrapper>
       <OutputName>{name}</OutputName>
-      <Output>{value}</Output>
+      <Output data-testid="output">{value}</Output>
     </Wrapper>
   );
 };

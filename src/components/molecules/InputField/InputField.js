@@ -8,7 +8,7 @@ const InputField = ({ onChange, value, label, name, id, type = 'number', min = '
   return (
     <Wrapper>
       <Label htmlFor={id}>{label}</Label>
-      <Input name={name} id={id} type={type} min={min} value={value} onChange={onChange} data-testid={label} />
+      <Input name={name} id={id} type={type} min={min} value={value} onChange={onChange} data-testid="input" />
     </Wrapper>
   );
 };
